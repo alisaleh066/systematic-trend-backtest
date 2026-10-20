@@ -1,0 +1,78 @@
+{
+  "config_sha256": "0d1dab8032f4e0a24aa3d901f5bdfbe8fcba1a28a5b55f5e25341c7e0874ebac",
+  "code_sha256": "e49d3ace86c74bcbf1c35c78b68b333d4a9f3ccf4c4fb54d12e690bb72bbc406",
+  "git_head": "f190cc5d2fe51952b3a0aaf56d1538d0987cf55e",
+  "selected_design": {
+    "key": "S1|u24|126",
+    "signal": "S1",
+    "universe": "u24",
+    "vol_window": 126,
+    "tradable_assets": [
+      "SPY",
+      "EFA",
+      "EEM",
+      "IWM",
+      "QQQ",
+      "EWJ",
+      "TLT",
+      "IEF",
+      "LQD",
+      "TIP",
+      "GLD",
+      "SLV",
+      "DBC",
+      "VNQ",
+      "UUP",
+      "FXE",
+      "SHY",
+      "EWG",
+      "EWZ",
+      "FXY",
+      "FXB",
+      "FXA",
+      "FXC",
+      "DBA"
+    ]
+  },
+  "trial_count": 49,
+  "dev_summary": {
+    "selected": {
+      "train_sharpe": 0.06678975133835154,
+      "validation_sharpe": 0.27002540477156267,
+      "dev_daily_sharpe": 0.0076893432443316005,
+      "train": {
+        "start": "2008-07-01",
+        "end": "2022-03-31",
+        "sessions": 3463,
+        "total_return": 0.1029816315843235,
+        "ann_return": 0.007158130185454636,
+        "ann_vol": 0.06922668082559819,
+        "sharpe": 0.06678975133835154,
+        "sortino": 0.0897887368687776,
+        "max_drawdown": -0.14904416742153326,
+        "calmar": 0.048026905777598786,
+        "turnover_per_year": 6.257006479940211,
+        "round_trips": 465,
+        "hit_rate": 0.37849462365591396,
+        "profit_factor": 0.8966856221543396
+      },
+      "validation": {
+        "start": "2022-04-01",
+        "end": "2026-09-30",
+        "sessions": 1128,
+        "total_return": 0.30889405212572174,
+        "ann_return": 0.06198152489829423,
+        "ann_vol": 0.07982474378999742,
+        "sharpe": 0.27002540477156267,
+        "sortino": 0.3729223207803837,
+        "max_drawdown": -0.10183219072719618,
+        "calmar": 0.6086633750651591,
+        "turnover_per_year": 5.983586797648244,
+        "round_trips": 135,
+        "hit_rate": 0.4074074074074074,
+        "profit_factor": 1.0101641470552178
+      }
+    },
+    "positive_validation_share": 0.5
+  }
+}
