@@ -6,3 +6,4 @@ __pycache__/
 data/raw/
 .env
 data/raw_radar/
+data/raw_v2/
