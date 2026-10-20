@@ -1,2 +1,3 @@
-- Built and pre-registered a cross-asset trend-following backtest (16 ETFs, 12-1 momentum, 10% volatility target) with a sealed 60/20/20 split, no-lookahead and cost-application tests, and Deflated Sharpe over 22 registered trials.
-- Out-of-sample (2023-02 to 2026-09, net of costs): Sharpe 0.25 (95% bootstrap CI -0.52 to 1.09), 6.7% annualised at 9.7% volatility, max drawdown -12.3%, against SPY Sharpe 1.02; Deflated Sharpe probability 0.60, verdict WATCH under my own validation contract.
+- Built and pre-registered a cross-asset trend-following research framework (16-24 ETFs, volatility targeting) with sealed chronological splits, a Deflated Sharpe over 49 registered trials, and no-lookahead, cost-application and test-lock tests.
+- v1 out-of-sample (2023-02 to 2026-09, net of costs): Sharpe 0.25 (95% bootstrap CI -0.52 to 1.09) against SPY 1.02, reported as an inconclusive WATCH rather than tuned.
+- v2 on a never-seen pre-sample holdout (2002-09 to 2008-06, 53 round trips, net of costs): Sharpe 0.65 (95% CI -0.13 to 1.46) against SPY 0.39 and 60/40 0.53; Deflated Sharpe probability 0.84, WATCH under my own contract.

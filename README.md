@@ -55,3 +55,27 @@ python -m venv .venv && .venv\Scripts\pip install -r requirements.txt
 - Profit factor and hit rate are per round trip on unweighted asset returns net of round-trip costs; they ignore position size and cash yield.
 - Yahoo adjusted closes are free-data quality. Borrow and slippage are flat assumptions. Long/short at up to 2x is not available in an ISA.
 - Validation favoured 9-month lookbacks over the pre-registered 12 months; the primary was not changed, by design.
+
+## v2: pre-sample holdout (new registration, same contract gates)
+After v1's test set was spent, v2 was registered in `PREREGISTRATION-v2.md` (committed before any new data was downloaded) and judged on a
+**never-seen pre-sample holdout, 2002-09-01 to 2008-06-30**. Changes from v1: point-in-time universe widened to 24 ETFs, FRED DTB3 as cash, and 12 registered
+designs (signal x universe x vol window), the best on validation chosen by a fixed rule: **S1|u24|126**. Deflated Sharpe uses 49 trials (v1's 22 included).
+
+**Verdict: WATCH.**
+
+| Holdout, 10 bps costs | v2 strategy | SPY | 60/40 | v1 rule (S1/U16/63) |
+|---|---|---|---|---|
+| Annualised return | 8.4% | 7.9% | 7.1% | 8.3% |
+| Volatility | 8.9% | 15.1% | 8.4% | 10.2% |
+| Sharpe | 0.65 | 0.39 | 0.53 | 0.57 |
+| Max drawdown | -14.1% | -17.8% | -7.7% | -14.0% |
+
+- Sharpe 95% bootstrap CI: -0.13 to 1.46 (includes zero). Deflated Sharpe probability 0.84 (needs 0.95).
+- 53 round trips (the contract needs 100), hit rate 45.3%, profit factor 1.59, turnover 4.13x a year. Cost stress Sharpe: 0.65 / 0.60 / 0.55 at 1x / 2x / 3x.
+- Cash earned 2.8% a year over the window.
+- Flags: Deflated Sharpe probability 0.84 < 0.95; only 50% of grid cells have positive validation Sharpe; result hinges on one setting (validation: primary beats neighbour median by 0.31); only 53 OOS round trips < 100.
+- Failed gates: bootstrap 95% CI for Sharpe above 0; >= 100 OOS round trips; every joint regime cell has enough trades.
+- What did not help: the 1/3/12-month and 3/6/12-month ensemble signals scored lower on validation than the single 12-1 signal, and they also scored lower on the holdout (see the sensitivity heatmap), so the literature-motivated change was not an improvement here. Widening the universe raised round trips but lowered train Sharpe.
+- Caveats: the holdout is *earlier* than the development data (contract line 60 wants the final 20%), 2002-2008 was a favourable era for trend following, and the selection rule picked a design whose train Sharpe was low. A contract-compliant check is prospective: `scripts/07_forward_check.py` logs the frozen rule from the freeze date; no forward numbers exist yet.
+
+Tearsheet: `results/tearsheet_v2.html`. Machine-readable: `results/v2_results.json`. v2 data: yfinance and FRED, downloaded 2026-10-20 UTC (`data/manifest_v2.json`).
