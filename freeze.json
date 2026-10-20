@@ -1,0 +1,40 @@
+{
+  "config_sha256": "4085e6553f5801783db94850c18856b3a6bba2b01e80a15423ba0debc0cda121",
+  "code_sha256": "276b9319a8522b121a8a126a7119452c59a2e0e2b4f2f5d858a2ac883ce04d52",
+  "git_head": "4ff45eaa27bde161b4b839668e94b905338ea02c",
+  "trial_count": 22,
+  "validation_primary": {
+    "train": {
+      "start": "2008-07-01",
+      "end": "2019-06-28",
+      "sessions": 2768,
+      "total_return": 0.3477061499241816,
+      "ann_return": 0.02753922111827012,
+      "ann_vol": 0.08985632266942742,
+      "sharpe": 0.30764826347357044,
+      "sortino": 0.4233377323634693,
+      "max_drawdown": -0.18821657001971748,
+      "calmar": 0.1463166665686508,
+      "turnover_per_year": 7.223013565322998,
+      "round_trips": 250,
+      "hit_rate": 0.404,
+      "profit_factor": 1.4344280124251911
+    },
+    "validation": {
+      "start": "2019-07-01",
+      "end": "2023-01-31",
+      "sessions": 904,
+      "total_return": 0.03290777121794508,
+      "ann_return": 0.00906655325679484,
+      "ann_vol": 0.11491914586277885,
+      "sharpe": 0.06674649879617735,
+      "sortino": 0.08536096998251937,
+      "max_drawdown": -0.2254370894443285,
+      "calmar": 0.04021766462272313,
+      "turnover_per_year": 5.480058745871487,
+      "round_trips": 60,
+      "hit_rate": 0.38333333333333336,
+      "profit_factor": 0.6140820470511578
+    }
+  }
+}
