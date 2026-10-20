@@ -1,0 +1,29 @@
+{
+  "config_sha256": "7c01cd7b04f86221ea94f99d4b3f2fc06f95e637a20ccb1c1bb06532c8c1cf95",
+  "code_sha256": "acfe695513a496e434b80d5a758e0e69b8a022f7d28e3ea5416791684fbe309c",
+  "git_head": "241300667799cca54a417b52e0933e1660db3d10",
+  "trial_count": 67,
+  "dev_summary": {
+    "development_sharpe": 0.4026862548298167,
+    "assets": [
+      "VFINX",
+      "NAESX",
+      "VEURX",
+      "VPACX",
+      "VEIEX",
+      "VFISX",
+      "VFITX",
+      "VUSTX",
+      "VWESX",
+      "VBMFX",
+      "VWEHX",
+      "VGSIX",
+      "DEXUSUK",
+      "DEXUSAL",
+      "DEXUSEU",
+      "DEXJPUS",
+      "DEXCAUS",
+      "DEXSZUS"
+    ]
+  }
+}
