@@ -1,0 +1,221 @@
+{
+  "start": "1985-01-01",
+  "end_exclusive": "2026-10-01",
+  "series": [
+    {
+      "name": "VFINX",
+      "source": "yfinance",
+      "url": "yfinance:VFINX",
+      "adjustment": "dividend+split adjusted",
+      "downloaded_utc": "2026-10-20T19:38:39+00:00",
+      "rows": 10517,
+      "first": "1985-01-02",
+      "last": "2026-09-30",
+      "sha256": "d212c2d37e29cb23f106fa022a9d1c792bd86d7fe78be336b7d799eebf564774"
+    },
+    {
+      "name": "NAESX",
+      "source": "yfinance",
+      "url": "yfinance:NAESX",
+      "adjustment": "dividend+split adjusted",
+      "downloaded_utc": "2026-10-20T19:38:40+00:00",
+      "rows": 10517,
+      "first": "1985-01-02",
+      "last": "2026-09-30",
+      "sha256": "146b7acdcb8b5d312d1389d20594a39fff8dde96e40fe3a9e4319905652f3c25"
+    },
+    {
+      "name": "VEURX",
+      "source": "yfinance",
+      "url": "yfinance:VEURX",
+      "adjustment": "dividend+split adjusted",
+      "downloaded_utc": "2026-10-20T19:38:41+00:00",
+      "rows": 9138,
+      "first": "1990-06-18",
+      "last": "2026-09-30",
+      "sha256": "50ee5624ab9f8acf9068de3c3d8df43095277c6abbcec4b3885e3940743451d1"
+    },
+    {
+      "name": "VPACX",
+      "source": "yfinance",
+      "url": "yfinance:VPACX",
+      "adjustment": "dividend+split adjusted",
+      "downloaded_utc": "2026-10-20T19:38:41+00:00",
+      "rows": 9138,
+      "first": "1990-06-18",
+      "last": "2026-09-30",
+      "sha256": "b90fa625112fe7af707c89470c4b001c1ec0e88e546b550a0de410abcee9cea8"
+    },
+    {
+      "name": "VEIEX",
+      "source": "yfinance",
+      "url": "yfinance:VEIEX",
+      "adjustment": "dividend+split adjusted",
+      "downloaded_utc": "2026-10-20T19:38:42+00:00",
+      "rows": 8157,
+      "first": "1994-05-04",
+      "last": "2026-09-30",
+      "sha256": "a1815f3fc6bc04422e99051501e336fed987cda20fa43da60e665af9cc407de1"
+    },
+    {
+      "name": "VFISX",
+      "source": "yfinance",
+      "url": "yfinance:VFISX",
+      "adjustment": "dividend+split adjusted",
+      "downloaded_utc": "2026-10-20T19:38:42+00:00",
+      "rows": 8793,
+      "first": "1991-10-28",
+      "last": "2026-09-30",
+      "sha256": "01a4552532f133c71771384975a0263d8ebf01efb33315759e589d0cdb276c66"
+    },
+    {
+      "name": "VFITX",
+      "source": "yfinance",
+      "url": "yfinance:VFITX",
+      "adjustment": "dividend+split adjusted",
+      "downloaded_utc": "2026-10-20T19:38:43+00:00",
+      "rows": 8793,
+      "first": "1991-10-28",
+      "last": "2026-09-30",
+      "sha256": "83219fcc250a83749bc7a22dbdef6cf44afcef65bdb013ba8542d7aaf96a5862"
+    },
+    {
+      "name": "VUSTX",
+      "source": "yfinance",
+      "url": "yfinance:VUSTX",
+      "adjustment": "dividend+split adjusted",
+      "downloaded_utc": "2026-10-20T19:38:44+00:00",
+      "rows": 10170,
+      "first": "1986-05-19",
+      "last": "2026-09-30",
+      "sha256": "356421c05ebf5320ee0dabc655004bbeb7b826a0c64a49d4735179bc3b980a6c"
+    },
+    {
+      "name": "VWESX",
+      "source": "yfinance",
+      "url": "yfinance:VWESX",
+      "adjustment": "dividend+split adjusted",
+      "downloaded_utc": "2026-10-20T19:38:45+00:00",
+      "rows": 10517,
+      "first": "1985-01-02",
+      "last": "2026-09-30",
+      "sha256": "f08c8ae1c25358bb279d87ea41b2bae8f25bedfd698d4cff70dc379a6c9da3be"
+    },
+    {
+      "name": "VBMFX",
+      "source": "yfinance",
+      "url": "yfinance:VBMFX",
+      "adjustment": "dividend+split adjusted",
+      "downloaded_utc": "2026-10-20T19:38:45+00:00",
+      "rows": 10026,
+      "first": "1986-12-11",
+      "last": "2026-09-30",
+      "sha256": "06ebb104b7010f32d03df095dc7e98feeb5578a63a4af9a46b60f01dc5257a10"
+    },
+    {
+      "name": "VWEHX",
+      "source": "yfinance",
+      "url": "yfinance:VWEHX",
+      "adjustment": "dividend+split adjusted",
+      "downloaded_utc": "2026-10-20T19:38:46+00:00",
+      "rows": 10517,
+      "first": "1985-01-02",
+      "last": "2026-09-30",
+      "sha256": "90845accd4e2e60f8b907196ff0c9af5e2f73b052b79ae89533e1a36d7917cba"
+    },
+    {
+      "name": "VGSIX",
+      "source": "yfinance",
+      "url": "yfinance:VGSIX",
+      "adjustment": "dividend+split adjusted",
+      "downloaded_utc": "2026-10-20T19:38:47+00:00",
+      "rows": 7645,
+      "first": "1996-05-13",
+      "last": "2026-09-30",
+      "sha256": "c20046216bd1272516ec9127dd18be69955f04efb84ecf7f9e20268ddc568b93"
+    },
+    {
+      "name": "DCOILWTICO",
+      "source": "FRED",
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DCOILWTICO&cosd=1985-01-01",
+      "downloaded_utc": "2026-10-20T19:38:47+00:00",
+      "rows": 9513,
+      "first": "1986-01-02",
+      "last": "2026-09-30",
+      "sha256": "2d8b6b383dcf43e6f978b87f736df5e7cf7d8ae98b0fe59301c4cd5ed5f2b8a5"
+    },
+    {
+      "name": "DEXUSUK",
+      "source": "FRED",
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXUSUK&cosd=1985-01-01",
+      "downloaded_utc": "2026-10-20T19:38:50+00:00",
+      "rows": 10477,
+      "first": "1985-01-02",
+      "last": "2026-09-30",
+      "sha256": "2e7cbab4ff305b3000cac0b86ad1c5795bb3eddd836cfec1145ab9ec5976822d"
+    },
+    {
+      "name": "DEXUSAL",
+      "source": "FRED",
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXUSAL&cosd=1985-01-01",
+      "downloaded_utc": "2026-10-20T19:38:52+00:00",
+      "rows": 10477,
+      "first": "1985-01-02",
+      "last": "2026-09-30",
+      "sha256": "90b10601f7539c98699660a2b8f78de4ed67918a6e9d943ab85914094eba60bc"
+    },
+    {
+      "name": "DEXUSEU",
+      "source": "FRED",
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXUSEU&cosd=1985-01-01",
+      "downloaded_utc": "2026-10-20T19:38:52+00:00",
+      "rows": 6958,
+      "first": "1999-01-04",
+      "last": "2026-09-30",
+      "sha256": "4678f409d41997f918a0427ee29501967bc80827fe5ba80bb5e9bc6a5ed20961"
+    },
+    {
+      "name": "DEXJPUS",
+      "source": "FRED",
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXJPUS&cosd=1985-01-01",
+      "downloaded_utc": "2026-10-20T19:38:54+00:00",
+      "rows": 10477,
+      "first": "1985-01-02",
+      "last": "2026-09-30",
+      "sha256": "5114a32bb33ff02fc7a7a4ada8d8126ad5899db25724bc2313bfd0f42543502b"
+    },
+    {
+      "name": "DEXCAUS",
+      "source": "FRED",
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXCAUS&cosd=1985-01-01",
+      "downloaded_utc": "2026-10-20T19:38:57+00:00",
+      "rows": 10477,
+      "first": "1985-01-02",
+      "last": "2026-09-30",
+      "sha256": "97144817edb7e0ba99b5a810090550db2f82af54a86326172763939746d27de7"
+    },
+    {
+      "name": "DEXSZUS",
+      "source": "FRED",
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXSZUS&cosd=1985-01-01",
+      "downloaded_utc": "2026-10-20T19:38:59+00:00",
+      "rows": 10477,
+      "first": "1985-01-02",
+      "last": "2026-09-30",
+      "sha256": "971c5ee9fb2716ee8a3ce8dae0fd74c06b019c7c6ea6775ff43f5b1d79ed9fbe"
+    },
+    {
+      "name": "DTB3",
+      "source": "FRED",
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DTB3&cosd=1985-01-01",
+      "downloaded_utc": "2026-10-20T19:39:01+00:00",
+      "rows": 10441,
+      "first": "1985-01-02",
+      "last": "2026-09-30",
+      "sha256": "89d046e84b69d5cfb8164db5fd0471e4ffe150a58d8bd2c36625433688cad823"
+    }
+  ],
+  "dropped": {
+    "XAUUSD": "download failed: ValueError: stooq returned no usable rows for xauusd: '<!DOCTYPE html><html><head><meta charset=\"utf-8\"><meta name=\"robots\" content=\"no'"
+  }
+}
