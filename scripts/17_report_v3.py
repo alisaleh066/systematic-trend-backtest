@@ -180,9 +180,21 @@ Excluded by the registered rules: {excl}. So v3 has **no commodities**.
 Tearsheet: `results/tearsheet_v3.html`. Machine-readable: `results/v3_results.json`. Data: yfinance and FRED, downloaded {dl[0][:10]} UTC (`data/manifest_v3.json`).
 Reproduce v2/v3: `scripts/08`-`12` (v2), `scripts/13`-`17` (v3); the holdout scripts refuse to run without a matching freeze, and a rerun must reproduce identical numbers.
 """
+gates_passed = sum(r["verdict"]["gates"].values())
+limits = f"""
+## Why the verdict is WATCH, and what a practitioner would object to
+- **Why WATCH, not PROMOTE.** v3 passes {gates_passed} of {len(r['verdict']['gates'])} contract gates, including a Sharpe CI above zero and {h['round_trips']} round trips.
+  It fails one: regime coverage. Only {r['regime_coverage']['trades']['trend/high']} and {r['regime_coverage']['trades']['trend/low']} trades entered in the two trending-market cells against 20 required, because an efficiency
+  ratio of 0.30 or more is rare and a monthly strategy trades little inside it. The Deflated Sharpe ({num(dsr['probability'])}) is also under 0.95. The gate was not loosened after seeing results.
+- **What would change it.** More years or markets inside trending regimes, or a change to the regime gate agreed and registered *before* a new version (v4) is run. A v4 needs fresh data: 1988-2008 and 2023-2026 have all been seen.
+  The contract-compliant route is the forward paper-trade (`scripts/07_forward_check.py`), which needs months to years.
+- **Data limits.** Mutual funds can't really be shorted; spot FX omits interest carry; v3 has no commodities (gold failed to download, oil was excluded by the registered gap rule). Effects on the Sharpe could go either way and are not measured here.
+- **Originality.** Trend following is a well-established strategy and this project does not claim a new edge. What it offers is the validation discipline: pre-registration before data,
+  sealed tests opened once, trial-counted Deflated Sharpe, cost stress, and a radar-rule study reported separately with no evidence of predictive power.
+"""
 readme = (ROOT / "README.md").read_text(encoding="utf-8")
 readme = re.sub(r"<!-- summary:start -->.*?<!-- summary:end -->\n\n", "", readme, flags=re.S)
-readme = readme.split("\n## v3: frozen rule")[0].rstrip("\n") + "\n" + sec
+readme = readme.split("\n## v3: frozen rule")[0].rstrip("\n") + "\n" + sec + limits
 readme = readme.replace("## Result (sealed out-of-sample", summary + "## v1 result (sealed out-of-sample", 1).replace(
     summary + "## v1 result (sealed out-of-sample", summary + "## v1 result (sealed out-of-sample")
 (ROOT / "README.md").write_text(readme, encoding="utf-8")
