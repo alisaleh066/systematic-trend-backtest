@@ -39,6 +39,11 @@ Verdict per contract lines 109–113. PROMOTE needs: net OOS gain and PF > 1 at 
 `02_run_dev.py` slices data to the validation end before computing anything. `03_freeze.py` records the config hash, commit, trial count and validation summary, and requires a clean tree. `04_run_sealed_test.py` refuses to run without a freeze, with a hash mismatch or on a dirty tree, and runs once; reruns must reproduce identical numbers.
 Report whatever comes out. Nothing is tuned on the test set.
 
+## 8a. Addendum 1 (2026-10-20, written after data download and split, before any performance was computed)
+- **Deflated Sharpe inputs:** the chosen strategy's daily excess returns on the sealed test window; trial Sharpe variance from the daily excess Sharpes of the 20 grid cells over train+validation combined (the selection sample, no test data); trial count N = unique (lookback, vol target, cost multiplier) combinations in `trials/ledger.csv` at freeze time, which covers the 20 grid cells plus the primary at 2x and 3x costs. Costs of 10 bps are the "1x" case.
+- **Sealed-test run:** the engine runs on the full history and the OOS window is sliced out; trades are counted by exit date inside the window, and a position carried in counts as entered at the window start. Benchmarks buy at the close before the window starts, with the entry cost booked on the first window day.
+- **Dev run:** `02_run_dev.py` drops all rows after the validation end before computing anything.
+
 ## 9. Secondary study: do the radar break rules predict next-period returns?
 - **Rules** (ported unchanged from `Financedashboard/server/routine_radar.py:46-83`): 20-session extreme divergence (one leg breaks its prior-20 high/low, the sign-adjusted other leg does not); 60-session correlation sign flip vs the prior day, or a > 0.5 shift from the prior-252 mean; ratio z-score beyond +/-2 over 252 sessions. 313 aligned observations minimum, no forward-fill.
 - **Pairs** (free daily legs only): SPY/TLT, RSP/SPY, QQQ/SPY, SOXX/SPY, SPY/^VIX, BZ=F/SPY, BZ=F/XLE, BZ=F/^VIX, ZW=F/DX-Y.NYB, GC=F/DFII10, BAMLH0A0HYM2/SPY. Pairs needing MATIF/TTF/JP2Y and crypto are excluded.
