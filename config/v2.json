@@ -1,0 +1,32 @@
+{
+  "version": "2.0",
+  "registered": "2026-10-20",
+  "holdout": ["2002-09-01", "2008-06-30"],
+  "dev": {"start": "2008-07-01", "train_frac": 0.75, "end": "last complete month before download"},
+  "universe": {
+    "u16": ["SPY", "EFA", "EEM", "IWM", "QQQ", "EWJ", "TLT", "IEF", "LQD", "TIP", "GLD", "SLV", "DBC", "VNQ", "UUP", "FXE"],
+    "u24_extra": ["SHY", "EWG", "EWZ", "FXY", "FXB", "FXA", "FXC", "DBA"],
+    "min_history_sessions": 273,
+    "calendar": "SPY",
+    "max_gap_ffill": 2,
+    "max_total_gap_days": 5
+  },
+  "cash": {"source": "FRED DTB3", "daily_rate": "DTB3[t-1]/100/252", "ffill": true},
+  "data": {"source": "yfinance", "fallback": "stooq", "auto_adjust": true, "start": "1999-01-01"},
+  "signals": {
+    "S1": {"lookbacks_months": [12], "skip_sessions": 21},
+    "S2": {"lookbacks_months": [1, 3, 12], "skip_sessions": 0},
+    "S3": {"lookbacks_months": [3, 6, 12], "skip_sessions": 21}
+  },
+  "designs": {"signal": ["S1", "S2", "S3"], "universe": ["u16", "u24"], "vol_window": [63, 126]},
+  "sizing": {"target_vol": 0.10, "gross_cap": 2.0, "annualisation": 252, "long_short": true},
+  "sensitivity_vol_targets": [0.06, 0.08, 0.10, 0.12, 0.15],
+  "execution": {"signal_at": "close_t", "fill_at": "close_t+1", "rebalance": "monthly"},
+  "costs": {"commission_bps": 5, "slippage_bps": 5, "stress_multipliers": [2, 3], "borrow_bps_per_year": 25},
+  "trial_count": 49,
+  "bootstrap": {"mean_block": 21, "resamples": 10000, "seed": 20261020},
+  "benchmarks": {"spy": {"SPY": 1.0}, "sixty_forty": {"SPY": 0.6, "IEF": 0.4}},
+  "flags": {"max_sharpe": 2.0, "min_dsr_prob": 0.95, "min_positive_grid_share": 0.6, "neighbour_median_gap": 0.3, "min_oos_trades": 100},
+  "regimes": {"er_window": 63, "er_threshold": 0.30, "vol_window": 20, "vol_median_lookback": 252, "min_trades_per_cell": 20},
+  "crises": {"2008": ["2008-07-01", "2009-03-31"], "2020": ["2020-02-01", "2020-04-30"], "2022": ["2022-01-01", "2022-12-31"]}
+}
