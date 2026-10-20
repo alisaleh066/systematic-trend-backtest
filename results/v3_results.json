@@ -1,0 +1,528 @@
+{
+  "version": "v3: frozen v2 rule, long-history proxies, pre-sample holdout (departs from contract line 60: not the final 20%)",
+  "holdout_window": [
+    "1988-01-04",
+    "2002-08-30"
+  ],
+  "assets": [
+    "VFINX",
+    "NAESX",
+    "VEURX",
+    "VPACX",
+    "VEIEX",
+    "VFISX",
+    "VFITX",
+    "VUSTX",
+    "VWESX",
+    "VBMFX",
+    "VWEHX",
+    "VGSIX",
+    "DEXUSUK",
+    "DEXUSAL",
+    "DEXUSEU",
+    "DEXJPUS",
+    "DEXCAUS",
+    "DEXSZUS"
+  ],
+  "panel_log": {
+    "excluded": {
+      "XAUUSD": "download failed: ValueError: stooq returned no usable rows for xauusd: '<!DOCTYPE html><html><head><meta charset=\"utf-8\"><meta name=\"robots\" content=\"no'",
+      "DCOILWTICO": "gap of 8 sessions in a row (limit 2)"
+    }
+  },
+  "headline_holdout_1x_costs": {
+    "start": "1988-01-04",
+    "end": "2002-08-30",
+    "sessions": 3701,
+    "total_return": 2.4742372578514855,
+    "ann_return": 0.0884963128273395,
+    "ann_vol": 0.062099041338112115,
+    "sharpe": 0.5877890084588154,
+    "sortino": 0.8372345810466054,
+    "max_drawdown": -0.10926407482020606,
+    "calmar": 0.8099305556099762,
+    "turnover_per_year": 4.556574856294212,
+    "round_trips": 208,
+    "hit_rate": 0.47596153846153844,
+    "profit_factor": 2.608758746131676
+  },
+  "holdout_cost_stress": {
+    "1x": {
+      "start": "1988-01-04",
+      "end": "2002-08-30",
+      "sessions": 3701,
+      "total_return": 2.4742372578514855,
+      "ann_return": 0.0884963128273395,
+      "ann_vol": 0.062099041338112115,
+      "sharpe": 0.5877890084588154,
+      "sortino": 0.8372345810466054,
+      "max_drawdown": -0.10926407482020606,
+      "calmar": 0.8099305556099762,
+      "turnover_per_year": 4.556574856294212,
+      "round_trips": 208,
+      "hit_rate": 0.47596153846153844,
+      "profit_factor": 2.608758746131676
+    },
+    "2x": {
+      "start": "1988-01-04",
+      "end": "2002-08-30",
+      "sessions": 3701,
+      "total_return": 2.2493158774295554,
+      "ann_return": 0.08354701975648005,
+      "ann_vol": 0.062133870722365814,
+      "sharpe": 0.5141286284694185,
+      "sortino": 0.7298828820381185,
+      "max_drawdown": -0.11067922942859809,
+      "calmar": 0.7548572590160496,
+      "turnover_per_year": 4.556574856294212,
+      "round_trips": 208,
+      "hit_rate": 0.4423076923076923,
+      "profit_factor": 2.4780311297100344
+    },
+    "3x": {
+      "start": "1988-01-04",
+      "end": "2002-08-30",
+      "sessions": 3701,
+      "total_return": 2.038813525358365,
+      "ann_return": 0.07861679078598782,
+      "ann_vol": 0.062218539980703536,
+      "sharpe": 0.44019741851997773,
+      "sortino": 0.6227491922565876,
+      "max_drawdown": -0.11209251399327402,
+      "calmar": 0.7013562992324816,
+      "turnover_per_year": 4.556574856294212,
+      "round_trips": 208,
+      "hit_rate": 0.42788461538461536,
+      "profit_factor": 2.3547348791975717
+    }
+  },
+  "sharpe_bootstrap_95ci": [
+    0.051419523697111204,
+    1.1543242849083624
+  ],
+  "deflated_sharpe": {
+    "probability": 0.9050733031729121,
+    "daily_sharpe": 0.0370272271371254,
+    "expected_max_daily_sharpe": 0.015364835332549445,
+    "trials": 67,
+    "trial_sharpe_variance": 4.145633836094395e-05,
+    "skew": -0.2229321325503961,
+    "kurtosis": 6.629901515724384
+  },
+  "benchmarks_holdout": {
+    "vfinx": {
+      "start": "1988-01-04",
+      "end": "2002-08-30",
+      "sessions": 3701,
+      "total_return": 4.181241310826138,
+      "ann_return": 0.11852472433058914,
+      "ann_vol": 0.1613769272708988,
+      "sharpe": 0.4637561667434036,
+      "sortino": 0.6600543940297656,
+      "max_drawdown": -0.46309219204856966,
+      "calmar": 0.25594196223925564,
+      "turnover_per_year": 0.0
+    },
+    "sixty_forty": {
+      "start": "1988-01-04",
+      "end": "2002-08-30",
+      "sessions": 3701,
+      "total_return": 3.4192881696370048,
+      "ann_return": 0.10647562091014096,
+      "ann_vol": 0.10037218206004747,
+      "sharpe": 0.5580431420560261,
+      "sortino": 0.8002512946755663,
+      "max_drawdown": -0.255079663036057,
+      "calmar": 0.4174210505174221,
+      "turnover_per_year": 0.17945173874903714
+    }
+  },
+  "sensitivity_sharpe": {
+    "1|0.06": 0.6614392515374728,
+    "1|0.08": 0.6048226629441319,
+    "1|0.1": 0.5877890084588154,
+    "1|0.12": 0.5877890084588154,
+    "1|0.15": 0.5877890084588155,
+    "2|0.06": 0.6218449504271037,
+    "2|0.08": 0.6256457733977001,
+    "2|0.1": 0.6279808577966539,
+    "2|0.12": 0.6279808577966539,
+    "2|0.15": 0.6279808577966539,
+    "3|0.06": 0.2944092436723038,
+    "3|0.08": 0.2358836947996512,
+    "3|0.1": 0.21415947507556865,
+    "3|0.12": 0.21371562564435836,
+    "3|0.15": 0.21371562564435845
+  },
+  "neighbour_gap": {
+    "inherited_v2_validation": 0.31178841594074336,
+    "holdout_heatmap": -0.03785676493888468
+  },
+  "crisis_periods_holdout": {
+    "1998": {
+      "window": [
+        "1998-08-01",
+        "1998-10-31"
+      ],
+      "strategy": {
+        "start": "1998-08-03",
+        "end": "1998-10-30",
+        "sessions": 64,
+        "total_return": -0.006473903147683702,
+        "ann_return": -0.02524962325511171,
+        "ann_vol": 0.08775917061855654,
+        "sharpe": -0.7602303958909653,
+        "sortino": -1.0583175318109213,
+        "max_drawdown": -0.052977251131202,
+        "calmar": -0.47661255946593356
+      },
+      "vfinx": {
+        "start": "1998-08-03",
+        "end": "1998-10-30",
+        "sessions": 64,
+        "total_return": -0.016589000707911916,
+        "ann_return": -0.06374466670484857,
+        "ann_vol": 0.31317644930255456,
+        "sharpe": -0.1987725068253925,
+        "sortino": -0.27355036898807433,
+        "max_drawdown": -0.14559791008813017,
+        "calmar": -0.43781306109589097
+      },
+      "sixty_forty": {
+        "start": "1998-08-03",
+        "end": "1998-10-30",
+        "sessions": 64,
+        "total_return": 0.006381178338036753,
+        "ann_return": 0.025362350423644653,
+        "ann_vol": 0.17931299967670422,
+        "sharpe": -0.02242878406059198,
+        "sortino": -0.031787589292678435,
+        "max_drawdown": -0.08048843506651093,
+        "calmar": 0.31510552295726324
+      }
+    },
+    "2000-02": {
+      "window": [
+        "2000-03-24",
+        "2002-08-30"
+      ],
+      "strategy": {
+        "start": "2000-03-24",
+        "end": "2002-08-30",
+        "sessions": 611,
+        "total_return": 0.19059401975887713,
+        "ann_return": 0.074602570159233,
+        "ann_vol": 0.06504471260187553,
+        "sharpe": 0.5640142655174788,
+        "sortino": 0.8184150490404615,
+        "max_drawdown": -0.05297083079128018,
+        "calmar": 1.4083707777434697
+      },
+      "vfinx": {
+        "start": "2000-03-24",
+        "end": "2002-08-30",
+        "sessions": 611,
+        "total_return": -0.381933032096787,
+        "ann_return": -0.17999786563920572,
+        "ann_vol": 0.22403037358291633,
+        "sharpe": -0.9405762595593945,
+        "sortino": -1.3091302913140355,
+        "max_drawdown": -0.4630921920485691,
+        "calmar": -0.38868689373265775
+      },
+      "sixty_forty": {
+        "start": "2000-03-24",
+        "end": "2002-08-30",
+        "sessions": 611,
+        "total_return": -0.17224351688491923,
+        "ann_return": -0.07500399413778835,
+        "ann_vol": 0.1301764119673008,
+        "sharpe": -0.820969514259229,
+        "sortino": -1.146753188603233,
+        "max_drawdown": -0.25507966303605834,
+        "calmar": -0.29404145060041775
+      }
+    }
+  },
+  "crisis_periods_development": {
+    "2008": {
+      "window": [
+        "2008-07-01",
+        "2009-03-31"
+      ],
+      "strategy": {
+        "start": "2008-07-01",
+        "end": "2009-03-31",
+        "sessions": 189,
+        "total_return": 0.10231255453631682,
+        "ann_return": 0.1386921804936163,
+        "ann_vol": 0.12531752044514854,
+        "sharpe": 1.0441712804625132,
+        "sortino": 1.653629609330128,
+        "max_drawdown": -0.061730401522075984,
+        "calmar": 2.2467402944725268
+      },
+      "vfinx": {
+        "start": "2008-07-01",
+        "end": "2009-03-31",
+        "sessions": 189,
+        "total_return": -0.36377779280086797,
+        "ann_return": -0.45280124744524497,
+        "ann_vol": 0.5013121976382523,
+        "sharpe": -0.9658525858380671,
+        "sortino": -1.3313247046264518,
+        "max_drawdown": -0.47229480893264786,
+        "calmar": -0.9587258612232963
+      },
+      "sixty_forty": {
+        "start": "2008-07-01",
+        "end": "2009-03-31",
+        "sessions": 189,
+        "total_return": -0.21209905431262988,
+        "ann_return": -0.2722836001217497,
+        "ann_vol": 0.28242455264413285,
+        "sharpe": -1.0084786554404577,
+        "sortino": -1.3763674458423538,
+        "max_drawdown": -0.30096817552389077,
+        "calmar": -0.904692330502352
+      }
+    },
+    "2020": {
+      "window": [
+        "2020-02-01",
+        "2020-04-30"
+      ],
+      "strategy": {
+        "start": "2020-02-03",
+        "end": "2020-04-30",
+        "sessions": 62,
+        "total_return": -0.07748768227536118,
+        "ann_return": -0.27950854384719104,
+        "ann_vol": 0.1616237121876967,
+        "sharpe": -1.9860056346224573,
+        "sortino": -2.293545277562111,
+        "max_drawdown": -0.14196230511483054,
+        "calmar": -1.96889268331549
+      },
+      "vfinx": {
+        "start": "2020-02-03",
+        "end": "2020-04-30",
+        "sessions": 62,
+        "total_return": -0.09410916469366748,
+        "ann_return": -0.3308335399795094,
+        "ann_vol": 0.6170861376247075,
+        "sharpe": -0.3547289493822538,
+        "sortino": -0.4909884576865368,
+        "max_drawdown": -0.33829772872752706,
+        "calmar": -0.9779360364726849
+      },
+      "sixty_forty": {
+        "start": "2020-02-03",
+        "end": "2020-04-30",
+        "sessions": 62,
+        "total_return": -0.038858235416506015,
+        "ann_return": -0.14878491935422722,
+        "ann_vol": 0.34495046804268326,
+        "sharpe": -0.3145065474630735,
+        "sortino": -0.42721924459190047,
+        "max_drawdown": -0.21425914135632118,
+        "calmar": -0.6944157360679056
+      }
+    },
+    "2022": {
+      "window": [
+        "2022-01-01",
+        "2022-12-31"
+      ],
+      "strategy": {
+        "start": "2022-01-03",
+        "end": "2022-12-30",
+        "sessions": 251,
+        "total_return": 0.1428201686402233,
+        "ann_return": 0.14342816057086494,
+        "ann_vol": 0.09883610616411546,
+        "sharpe": 1.200499222913491,
+        "sortino": 1.7812006599186325,
+        "max_drawdown": -0.08295330111687604,
+        "calmar": 1.7290229398922121
+      },
+      "vfinx": {
+        "start": "2022-01-03",
+        "end": "2022-12-30",
+        "sessions": 251,
+        "total_return": -0.18325698524574385,
+        "ann_return": -0.18391542059883403,
+        "ann_vol": 0.24173649810344122,
+        "sharpe": -0.8037012086924883,
+        "sortino": -1.106260178683172,
+        "max_drawdown": -0.24586689548466645,
+        "calmar": -0.7480284006364084
+      },
+      "sixty_forty": {
+        "start": "2022-01-03",
+        "end": "2022-12-30",
+        "sessions": 251,
+        "total_return": -0.1607553166799044,
+        "ann_return": -0.1613410887717287,
+        "ann_vol": 0.15569495112096676,
+        "sharpe": -1.1824270915530875,
+        "sortino": -1.6069964193257789,
+        "max_drawdown": -0.2071171100725211,
+        "calmar": -0.7789848396167554
+      }
+    }
+  },
+  "regime_coverage": {
+    "trades": {
+      "trend/high": 5,
+      "trend/low": 15,
+      "range/high": 92,
+      "range/low": 96
+    },
+    "sparse": [
+      "trend/high",
+      "trend/low"
+    ],
+    "unknown": 0
+  },
+  "regime_decomposition_holdout": {
+    "year": {
+      "1988": {
+        "days": 253,
+        "ann_return": 0.05842686139791295
+      },
+      "1989": {
+        "days": 252,
+        "ann_return": 0.11186102469490423
+      },
+      "1990": {
+        "days": 253,
+        "ann_return": 0.10992117928614879
+      },
+      "1991": {
+        "days": 253,
+        "ann_return": 0.0801604060291014
+      },
+      "1992": {
+        "days": 254,
+        "ann_return": 0.12686621667697737
+      },
+      "1993": {
+        "days": 253,
+        "ann_return": 0.16039475828838015
+      },
+      "1994": {
+        "days": 252,
+        "ann_return": 0.002649464678926062
+      },
+      "1995": {
+        "days": 252,
+        "ann_return": 0.1494900030130371
+      },
+      "1996": {
+        "days": 254,
+        "ann_return": 0.07129653601123997
+      },
+      "1997": {
+        "days": 253,
+        "ann_return": 0.14496488785788275
+      },
+      "1998": {
+        "days": 252,
+        "ann_return": 0.06111619605206142
+      },
+      "1999": {
+        "days": 252,
+        "ann_return": 0.022319470724150484
+      },
+      "2000": {
+        "days": 252,
+        "ann_return": 0.032120387027230045
+      },
+      "2001": {
+        "days": 248,
+        "ann_return": 0.0665527969796813
+      },
+      "2002": {
+        "days": 168,
+        "ann_return": 0.10957258356963495
+      }
+    },
+    "trend": {
+      "range": {
+        "days": 3333,
+        "ann_return": 0.08610275072395668
+      },
+      "trend": {
+        "days": 368,
+        "ann_return": 0.09250824957584788
+      }
+    },
+    "vol": {
+      "high": {
+        "days": 1859,
+        "ann_return": 0.05372916165462725
+      },
+      "low": {
+        "days": 1842,
+        "ann_return": 0.12005482762807139
+      }
+    },
+    "cell": {
+      "range/high": {
+        "days": 1694,
+        "ann_return": 0.050855482567422665
+      },
+      "range/low": {
+        "days": 1639,
+        "ann_return": 0.1225328131139314
+      },
+      "trend/high": {
+        "days": 165,
+        "ann_return": 0.08323226694992769
+      },
+      "trend/low": {
+        "days": 203,
+        "ann_return": 0.10004784136538894
+      }
+    }
+  },
+  "complete_holdout_years": [
+    1988,
+    1989,
+    1990,
+    1991,
+    1992,
+    1993,
+    1994,
+    1995,
+    1996,
+    1997,
+    1998,
+    1999,
+    2000,
+    2001
+  ],
+  "trial_count": 67,
+  "flags": [
+    "Deflated Sharpe probability 0.91 < 0.95",
+    "only 50% of grid cells have positive validation Sharpe",
+    "result hinges on one setting (validation: primary beats neighbour median by 0.31)"
+  ],
+  "verdict": {
+    "verdict": "WATCH",
+    "gates": {
+      "net OOS return > 0 at 1x costs": true,
+      "net OOS return > 0 at 2x costs": true,
+      "profit factor > 1 at 1x costs": true,
+      "profit factor > 1 at 2x costs": true,
+      "bootstrap 95% CI for Sharpe above 0": true,
+      ">= 100 OOS round trips": true,
+      ">= 2 complete OOS calendar years": true,
+      "every joint regime cell has enough trades": false
+    },
+    "failed": [
+      "every joint regime cell has enough trades"
+    ]
+  }
+}

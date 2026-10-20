@@ -119,3 +119,20 @@ logged_utc,stage,study,lookback_months,target_vol,cost_mult,segment,sharpe,note
 2026-10-20T18:28:34+00:00,holdout-v2,v2,3,0.12,1,holdout,0.344711,S1|u24|126 sensitivity
 2026-10-20T18:28:34+00:00,holdout-v2,v2,3,0.15,1,holdout,0.321929,S1|u24|126 sensitivity
 2026-10-20T19:40:14+00:00,dev-v3,v3,1,0.1,1,development,0.402686,v3 rule (report only)
+2026-10-20T19:40:59+00:00,holdout-v3,v3,1,0.1,2,holdout,0.514129,v3 cost stress
+2026-10-20T19:40:59+00:00,holdout-v3,v3,1,0.1,3,holdout,0.440197,v3 cost stress
+2026-10-20T19:40:59+00:00,holdout-v3,v3,1,0.06,1,holdout,0.661439,v3 sensitivity
+2026-10-20T19:40:59+00:00,holdout-v3,v3,1,0.08,1,holdout,0.604823,v3 sensitivity
+2026-10-20T19:40:59+00:00,holdout-v3,v3,1,0.1,1,holdout,0.587789,v3 sensitivity
+2026-10-20T19:40:59+00:00,holdout-v3,v3,1,0.12,1,holdout,0.587789,v3 sensitivity
+2026-10-20T19:40:59+00:00,holdout-v3,v3,1,0.15,1,holdout,0.587789,v3 sensitivity
+2026-10-20T19:40:59+00:00,holdout-v3,v3,2,0.06,1,holdout,0.621845,v3 sensitivity
+2026-10-20T19:40:59+00:00,holdout-v3,v3,2,0.08,1,holdout,0.625646,v3 sensitivity
+2026-10-20T19:40:59+00:00,holdout-v3,v3,2,0.1,1,holdout,0.627981,v3 sensitivity
+2026-10-20T19:40:59+00:00,holdout-v3,v3,2,0.12,1,holdout,0.627981,v3 sensitivity
+2026-10-20T19:40:59+00:00,holdout-v3,v3,2,0.15,1,holdout,0.627981,v3 sensitivity
+2026-10-20T19:40:59+00:00,holdout-v3,v3,3,0.06,1,holdout,0.294409,v3 sensitivity
+2026-10-20T19:40:59+00:00,holdout-v3,v3,3,0.08,1,holdout,0.235884,v3 sensitivity
+2026-10-20T19:40:59+00:00,holdout-v3,v3,3,0.1,1,holdout,0.214159,v3 sensitivity
+2026-10-20T19:40:59+00:00,holdout-v3,v3,3,0.12,1,holdout,0.213716,v3 sensitivity
+2026-10-20T19:40:59+00:00,holdout-v3,v3,3,0.15,1,holdout,0.213716,v3 sensitivity
