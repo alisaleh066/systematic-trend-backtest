@@ -1,0 +1,401 @@
+{
+  "version": "v2 pre-sample holdout (departs from contract line 60: not the final 20%)",
+  "selected_design": "S1|u24|126",
+  "holdout_window": [
+    "2002-09-01",
+    "2008-06-30"
+  ],
+  "headline_holdout_1x_costs": {
+    "start": "2002-09-03",
+    "end": "2008-06-30",
+    "sessions": 1467,
+    "total_return": 0.6032695190979462,
+    "ann_return": 0.08446576536101014,
+    "ann_vol": 0.08918053739599467,
+    "sharpe": 0.6465055522582895,
+    "sortino": 0.9166355202298646,
+    "max_drawdown": -0.1411051971489634,
+    "calmar": 0.5986013773244683,
+    "turnover_per_year": 4.129837079009428,
+    "round_trips": 53,
+    "hit_rate": 0.4528301886792453,
+    "profit_factor": 1.5874418528150425
+  },
+  "holdout_cost_stress": {
+    "1x": {
+      "start": "2002-09-03",
+      "end": "2008-06-30",
+      "sessions": 1467,
+      "total_return": 0.6032695190979462,
+      "ann_return": 0.08446576536101014,
+      "ann_vol": 0.08918053739599467,
+      "sharpe": 0.6465055522582895,
+      "sortino": 0.9166355202298646,
+      "max_drawdown": -0.1411051971489634,
+      "calmar": 0.5986013773244683,
+      "turnover_per_year": 4.129837079009428,
+      "round_trips": 53,
+      "hit_rate": 0.4528301886792453,
+      "profit_factor": 1.5874418528150425
+    },
+    "2x": {
+      "start": "2002-09-03",
+      "end": "2008-06-30",
+      "sessions": 1467,
+      "total_return": 0.5651677554082366,
+      "ann_return": 0.07999439846172152,
+      "ann_vol": 0.08921464193827987,
+      "sharpe": 0.599964831045067,
+      "sortino": 0.8490486276454015,
+      "max_drawdown": -0.14204434792845577,
+      "calmar": 0.5631649525542032,
+      "turnover_per_year": 4.129837079009428,
+      "round_trips": 53,
+      "hit_rate": 0.4528301886792453,
+      "profit_factor": 1.5363451008712485
+    },
+    "3x": {
+      "start": "2002-09-03",
+      "end": "2008-06-30",
+      "sessions": 1467,
+      "total_return": 0.5279393100318084,
+      "ann_return": 0.07553757739680678,
+      "ann_vol": 0.08928839536483181,
+      "sharpe": 0.553213763737317,
+      "sortino": 0.7812781439325586,
+      "max_drawdown": -0.14298290212500475,
+      "calmar": 0.5282979732133778,
+      "turnover_per_year": 4.129837079009428,
+      "round_trips": 53,
+      "hit_rate": 0.4528301886792453,
+      "profit_factor": 1.4873657422133628
+    }
+  },
+  "sharpe_bootstrap_95ci": [
+    -0.13231149488795788,
+    1.4604282070532486
+  ],
+  "deflated_sharpe": {
+    "probability": 0.8401372614645608,
+    "daily_sharpe": 0.040726021726140635,
+    "expected_max_daily_sharpe": 0.014606426732967054,
+    "trials": 49,
+    "trial_sharpe_variance": 4.145633836094395e-05,
+    "skew": -0.2233995308239472,
+    "kurtosis": 3.6233465853395526
+  },
+  "benchmarks_holdout": {
+    "spy": {
+      "start": "2002-09-03",
+      "end": "2008-06-30",
+      "sessions": 1467,
+      "total_return": 0.5526736213720891,
+      "ann_return": 0.07850853989783246,
+      "ann_vol": 0.15111858056633165,
+      "sharpe": 0.39416506489932973,
+      "sortino": 0.5623400610942413,
+      "max_drawdown": -0.17766248376931693,
+      "calmar": 0.44189711993315733,
+      "turnover_per_year": 0.0,
+      "costs_paid": 0.001
+    },
+    "sixty_forty": {
+      "start": "2002-09-03",
+      "end": "2008-06-30",
+      "sessions": 1467,
+      "total_return": 0.4877456214130327,
+      "ann_return": 0.07062363991813414,
+      "ann_vol": 0.08428350404776204,
+      "sharpe": 0.5264164962673449,
+      "sortino": 0.7518328387776498,
+      "max_drawdown": -0.07676366442719673,
+      "calmar": 0.9200139212363183,
+      "turnover_per_year": 0.17233182736377417,
+      "costs_paid": 0.002003217423581971
+    }
+  },
+  "v1_primary_rule_on_holdout": {
+    "start": "2002-09-03",
+    "end": "2008-06-30",
+    "sessions": 1467,
+    "total_return": 0.591137481764983,
+    "ann_return": 0.08305167050584084,
+    "ann_vol": 0.10173819812453459,
+    "sharpe": 0.5656208729580844,
+    "sortino": 0.8010467627083264,
+    "max_drawdown": -0.13979335594861753,
+    "calmar": 0.5941031313131028,
+    "turnover_per_year": 5.322772099644019,
+    "round_trips": 49,
+    "hit_rate": 0.46938775510204084,
+    "profit_factor": 2.0099853583057343
+  },
+  "sensitivity_sharpe": {
+    "1|0.06": 0.6375626861090273,
+    "1|0.08": 0.6655708820554813,
+    "1|0.1": 0.6465055522582895,
+    "1|0.12": 0.6223640088796114,
+    "1|0.15": 0.5637443700581654,
+    "2|0.06": 0.36051638837747146,
+    "2|0.08": 0.4276984883270745,
+    "2|0.1": 0.4689314839566673,
+    "2|0.12": 0.48867034622016464,
+    "2|0.15": 0.48412110271713843,
+    "3|0.06": 0.3899829309872149,
+    "3|0.08": 0.3760109874177778,
+    "3|0.1": 0.3487004477646979,
+    "3|0.12": 0.3447112876557064,
+    "3|0.15": 0.32192859847314353
+  },
+  "neighbour_gap": {
+    "selected_vs_other_designs_validation": 0.31178841594074336,
+    "holdout_heatmap": 0.1578352060381249
+  },
+  "crisis_periods_development": {
+    "2008": {
+      "segment": "development",
+      "window": [
+        "2008-07-01",
+        "2009-03-31"
+      ],
+      "strategy": {
+        "start": "2008-07-01",
+        "end": "2009-03-31",
+        "sessions": 189,
+        "total_return": 0.004516087377259614,
+        "ann_return": 0.00602597752871592,
+        "ann_vol": 0.12391017583321014,
+        "sharpe": 0.05466378458912737,
+        "sortino": 0.07784386647292223,
+        "max_drawdown": -0.08439018418003452,
+        "calmar": 0.07140614263692505
+      },
+      "spy": {
+        "start": "2008-07-01",
+        "end": "2009-03-31",
+        "sessions": 189,
+        "total_return": -0.36610601295779943,
+        "ann_return": -0.4554695426763796,
+        "ann_vol": 0.5050160637959895,
+        "sharpe": -0.9660451275834037,
+        "sortino": -1.3553677524918166,
+        "max_drawdown": -0.47165227082707517,
+        "calmar": -0.9656892818043301
+      },
+      "sixty_forty": {
+        "start": "2008-07-01",
+        "end": "2009-03-31",
+        "sessions": 189,
+        "total_return": -0.18638618719236633,
+        "ann_return": -0.24044758184386117,
+        "ann_vol": 0.2723263667093463,
+        "sharpe": -0.8995618836817149,
+        "sortino": -1.2660463360784544,
+        "max_drawdown": -0.28255983116244165,
+        "calmar": -0.8509616559957156
+      }
+    },
+    "2020": {
+      "segment": "development",
+      "window": [
+        "2020-02-01",
+        "2020-04-30"
+      ],
+      "strategy": {
+        "start": "2020-02-03",
+        "end": "2020-04-30",
+        "sessions": 62,
+        "total_return": -0.0601402163330268,
+        "ann_return": -0.22283291296691765,
+        "ann_vol": 0.17293882729378407,
+        "sharpe": -1.4078248597875571,
+        "sortino": -1.677548991030934,
+        "max_drawdown": -0.13356549437645293,
+        "calmar": -1.6683419172534595
+      },
+      "spy": {
+        "start": "2020-02-03",
+        "end": "2020-04-30",
+        "sessions": 62,
+        "total_return": -0.09272344305944025,
+        "ann_return": -0.32666330091241313,
+        "ann_vol": 0.5955921704018081,
+        "sharpe": -0.3786931239900131,
+        "sortino": -0.5196516388337223,
+        "max_drawdown": -0.33717262170769147,
+        "calmar": -0.9688310375200354
+      },
+      "sixty_forty": {
+        "start": "2020-02-03",
+        "end": "2020-04-30",
+        "sessions": 62,
+        "total_return": -0.018927087041255453,
+        "ann_return": -0.07472731880468009,
+        "ann_vol": 0.3113109889879447,
+        "sharpe": -0.11595608488277215,
+        "sortino": -0.15838947882352628,
+        "max_drawdown": -0.18664772859756296,
+        "calmar": -0.40036554083013787
+      }
+    },
+    "2022": {
+      "segment": "development",
+      "window": [
+        "2022-01-01",
+        "2022-12-31"
+      ],
+      "strategy": {
+        "start": "2022-01-03",
+        "end": "2022-12-30",
+        "sessions": 251,
+        "total_return": 0.12418423057713812,
+        "ann_return": 0.1247086331588576,
+        "ann_vol": 0.10307074043123719,
+        "sharpe": 0.9952259860221163,
+        "sortino": 1.406110485024845,
+        "max_drawdown": -0.08155262121294626,
+        "calmar": 1.5291799491425844
+      },
+      "spy": {
+        "start": "2022-01-03",
+        "end": "2022-12-30",
+        "sessions": 251,
+        "total_return": -0.18256721258462372,
+        "ann_return": -0.18322345696651277,
+        "ann_vol": 0.24240461515106246,
+        "sharpe": -0.7973254625057576,
+        "sortino": -1.0980735245484008,
+        "max_drawdown": -0.24496400799085782,
+        "calmar": -0.7479607247990111
+      },
+      "sixty_forty": {
+        "start": "2022-01-03",
+        "end": "2022-12-30",
+        "sessions": 251,
+        "total_return": -0.16710130835451087,
+        "ann_return": -0.16770782014496188,
+        "ann_vol": 0.15804910812856263,
+        "sharpe": -1.2106758128979473,
+        "sortino": -1.6495421211105052,
+        "max_drawdown": -0.20969016344819624,
+        "calmar": -0.7997886853018451
+      }
+    }
+  },
+  "regime_coverage": {
+    "trades": {
+      "trend/high": 1,
+      "trend/low": 2,
+      "range/high": 15,
+      "range/low": 35
+    },
+    "sparse": [
+      "trend/high",
+      "trend/low",
+      "range/high"
+    ],
+    "unknown": 0
+  },
+  "regime_decomposition_holdout": {
+    "year": {
+      "2002": {
+        "days": 84,
+        "ann_return": 0.023334662052676793
+      },
+      "2003": {
+        "days": 252,
+        "ann_return": 0.08323743725174042
+      },
+      "2004": {
+        "days": 252,
+        "ann_return": 0.07605734926565483
+      },
+      "2005": {
+        "days": 252,
+        "ann_return": 0.07048452206934586
+      },
+      "2006": {
+        "days": 251,
+        "ann_return": 0.0334355983620359
+      },
+      "2007": {
+        "days": 251,
+        "ann_return": 0.1633742244693579
+      },
+      "2008": {
+        "days": 125,
+        "ann_return": 0.12434937288175131
+      }
+    },
+    "trend": {
+      "range": {
+        "days": 1377,
+        "ann_return": 0.09503072325881658
+      },
+      "trend": {
+        "days": 90,
+        "ann_return": -0.06722079344675588
+      }
+    },
+    "vol": {
+      "high": {
+        "days": 647,
+        "ann_return": 0.08233461306193107
+      },
+      "low": {
+        "days": 820,
+        "ann_return": 0.08724017056843045
+      }
+    },
+    "cell": {
+      "range/high": {
+        "days": 635,
+        "ann_return": 0.08448291335469849
+      },
+      "range/low": {
+        "days": 742,
+        "ann_return": 0.10405748779940278
+      },
+      "trend/high": {
+        "days": 12,
+        "ann_return": -0.031346277430344245
+      },
+      "trend/low": {
+        "days": 78,
+        "ann_return": -0.0727399497569731
+      }
+    }
+  },
+  "complete_holdout_years": [
+    2003,
+    2004,
+    2005,
+    2006,
+    2007
+  ],
+  "trial_count": 49,
+  "flags": [
+    "Deflated Sharpe probability 0.84 < 0.95",
+    "only 50% of grid cells have positive validation Sharpe",
+    "result hinges on one setting (validation: primary beats neighbour median by 0.31)",
+    "only 53 OOS round trips < 100"
+  ],
+  "verdict": {
+    "verdict": "WATCH",
+    "gates": {
+      "net OOS return > 0 at 1x costs": true,
+      "net OOS return > 0 at 2x costs": true,
+      "profit factor > 1 at 1x costs": true,
+      "profit factor > 1 at 2x costs": true,
+      "bootstrap 95% CI for Sharpe above 0": false,
+      ">= 100 OOS round trips": false,
+      ">= 2 complete OOS calendar years": true,
+      "every joint regime cell has enough trades": false
+    },
+    "failed": [
+      "bootstrap 95% CI for Sharpe above 0",
+      ">= 100 OOS round trips",
+      "every joint regime cell has enough trades"
+    ]
+  }
+}
