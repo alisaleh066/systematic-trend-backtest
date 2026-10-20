@@ -89,10 +89,10 @@ def fit_to_calendar(raw: pd.Series, cal: pd.DatetimeIndex, max_gap: int) -> tupl
 def excess_return_index(spot: pd.Series, rf: pd.Series) -> pd.Series:
     """Synthetic index whose return is spot move + rf, so the engine's r - rf equals the spot move. NaN before listing."""
     first = spot.first_valid_index()
-    r = spot.loc[first:].pct_change().fillna(0.0)
-    idx = 100.0 * np.cumprod(1.0 + r + rf.reindex(r.index).fillna(0.0))
-    idx.iloc[0] = 100.0
-    return idx.reindex(spot.index)
+    r = spot.loc[first:].pct_change()
+    growth = 1.0 + r + rf.reindex(r.index).fillna(0.0)
+    growth.iloc[0] = 1.0  # listing day: base level, no return yet
+    return (100.0 * np.cumprod(growth)).reindex(spot.index)
 
 
 def cash_returns3(cal: pd.DatetimeIndex) -> pd.Series:

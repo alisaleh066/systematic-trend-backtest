@@ -1,0 +1,86 @@
+{
+  "dev_window": [
+    "2002-09-03",
+    "2026-09-30"
+  ],
+  "assets": [
+    "VFINX",
+    "NAESX",
+    "VEURX",
+    "VPACX",
+    "VEIEX",
+    "VFISX",
+    "VFITX",
+    "VUSTX",
+    "VWESX",
+    "VBMFX",
+    "VWEHX",
+    "VGSIX",
+    "DEXUSUK",
+    "DEXUSAL",
+    "DEXUSEU",
+    "DEXJPUS",
+    "DEXCAUS",
+    "DEXSZUS"
+  ],
+  "panel_log": {
+    "excluded": {
+      "XAUUSD": "download failed: ValueError: stooq returned no usable rows for xauusd: '<!DOCTYPE html><html><head><meta charset=\"utf-8\"><meta name=\"robots\" content=\"no'",
+      "DCOILWTICO": "gap of 8 sessions in a row (limit 2)"
+    }
+  },
+  "development": {
+    "start": "2002-09-03",
+    "end": "2026-09-30",
+    "sessions": 6058,
+    "total_return": 1.7978761924191113,
+    "ann_return": 0.04372748759686407,
+    "ann_vol": 0.06953256168578767,
+    "sharpe": 0.4026862548298167,
+    "sortino": 0.5651451639155252,
+    "max_drawdown": -0.14196230511483054,
+    "calmar": 0.308021820028167,
+    "turnover_per_year": 5.016624938890683,
+    "round_trips": 490,
+    "hit_rate": 0.43673469387755104,
+    "profit_factor": 1.721681800037651
+  },
+  "crises_dev": {
+    "2008": {
+      "start": "2008-07-01",
+      "end": "2009-03-31",
+      "sessions": 189,
+      "total_return": 0.10231255453631682,
+      "ann_return": 0.1386921804936163,
+      "ann_vol": 0.12531752044514854,
+      "sharpe": 1.0441712804625132,
+      "sortino": 1.653629609330128,
+      "max_drawdown": -0.061730401522075984,
+      "calmar": 2.2467402944725268
+    },
+    "2020": {
+      "start": "2020-02-03",
+      "end": "2020-04-30",
+      "sessions": 62,
+      "total_return": -0.07748768227536118,
+      "ann_return": -0.27950854384719104,
+      "ann_vol": 0.1616237121876967,
+      "sharpe": -1.9860056346224573,
+      "sortino": -2.293545277562111,
+      "max_drawdown": -0.14196230511483054,
+      "calmar": -1.96889268331549
+    },
+    "2022": {
+      "start": "2022-01-03",
+      "end": "2022-12-30",
+      "sessions": 251,
+      "total_return": 0.1428201686402233,
+      "ann_return": 0.14342816057086494,
+      "ann_vol": 0.09883610616411546,
+      "sharpe": 1.200499222913491,
+      "sortino": 1.7812006599186325,
+      "max_drawdown": -0.08295330111687604,
+      "calmar": 1.7290229398922121
+    }
+  }
+}
