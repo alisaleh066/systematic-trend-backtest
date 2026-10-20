@@ -63,3 +63,15 @@ logged_utc,stage,study,lookback_months,target_vol,cost_mult,segment,sharpe,note
 2026-10-20T17:57:51+00:00,sealed,primary,12,0.1,1,test,0.253852,grid sensitivity
 2026-10-20T17:57:51+00:00,sealed,primary,12,0.12,1,test,0.280970,grid sensitivity
 2026-10-20T17:57:51+00:00,sealed,primary,12,0.15,1,test,0.298877,grid sensitivity
+2026-10-20T18:00:00+00:00,radar,radar,0,0,1,test,nan,divergence|spy_ret diff=-0.01067
+2026-10-20T18:00:00+00:00,radar,radar,0,0,1,test,nan,divergence|left_ret diff=-0.00237
+2026-10-20T18:00:00+00:00,radar,radar,0,0,1,test,nan,divergence|spy_vol diff=0.01086
+2026-10-20T18:00:00+00:00,radar,radar,0,0,1,test,nan,correlation|spy_ret diff=0.00540
+2026-10-20T18:00:00+00:00,radar,radar,0,0,1,test,nan,correlation|left_ret diff=0.00458
+2026-10-20T18:00:00+00:00,radar,radar,0,0,1,test,nan,correlation|spy_vol diff=-0.00642
+2026-10-20T18:00:00+00:00,radar,radar,0,0,1,test,nan,zscore|spy_ret diff=-0.00104
+2026-10-20T18:00:00+00:00,radar,radar,0,0,1,test,nan,zscore|left_ret diff=-0.00827
+2026-10-20T18:00:00+00:00,radar,radar,0,0,1,test,nan,zscore|spy_vol diff=-0.00452
+2026-10-20T18:00:00+00:00,radar,radar,0,0,1,test,nan,any_break|spy_ret diff=-0.00854
+2026-10-20T18:00:00+00:00,radar,radar,0,0,1,test,nan,any_break|left_ret diff=-0.00947
+2026-10-20T18:00:00+00:00,radar,radar,0,0,1,test,nan,any_break|spy_vol diff=0.00610

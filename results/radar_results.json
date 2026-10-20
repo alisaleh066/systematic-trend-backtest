@@ -1,0 +1,542 @@
+{
+  "pairs": {
+    "SPY/TLT": {
+      "aligned_rows": 5218,
+      "first": "2006-01-03",
+      "reads": 217
+    },
+    "RSP/SPY": {
+      "aligned_rows": 5218,
+      "first": "2006-01-03",
+      "reads": 217
+    },
+    "QQQ/SPY": {
+      "aligned_rows": 5218,
+      "first": "2006-01-03",
+      "reads": 217
+    },
+    "SOXX/SPY": {
+      "aligned_rows": 5218,
+      "first": "2006-01-03",
+      "reads": 217
+    },
+    "SPY/^VIX": {
+      "aligned_rows": 5218,
+      "first": "2006-01-03",
+      "reads": 217
+    },
+    "BZ=F/SPY": {
+      "aligned_rows": 4769,
+      "first": "2007-07-30",
+      "reads": 212
+    },
+    "BZ=F/XLE": {
+      "aligned_rows": 4769,
+      "first": "2007-07-30",
+      "reads": 212
+    },
+    "BZ=F/^VIX": {
+      "aligned_rows": 4769,
+      "first": "2007-07-30",
+      "reads": 212
+    },
+    "ZW=F/DX-Y.NYB": {
+      "aligned_rows": 5218,
+      "first": "2006-01-03",
+      "reads": 217
+    },
+    "GC=F/DFII10": {
+      "aligned_rows": 5180,
+      "first": "2006-01-03",
+      "reads": 159
+    },
+    "BAMLH0A0HYM2/SPY": {
+      "aligned_rows": 737,
+      "first": "2023-10-23",
+      "reads": 19
+    }
+  },
+  "segments": {
+    "train": {
+      "observations": 1263,
+      "tests": {
+        "divergence|spy_ret": {
+          "mean_break": 0.013428644089014213,
+          "mean_hold": 0.008313268817316958,
+          "diff": 0.005115375271697255,
+          "ci95": [
+            -0.0033242961142331763,
+            0.014155909106006998
+          ],
+          "p_value": 0.2394,
+          "n_break": 403,
+          "n_hold": 860,
+          "months": 132,
+          "bh_significant_5pct": false
+        },
+        "divergence|left_ret": {
+          "mean_break": 0.008812615181728147,
+          "mean_hold": 0.006466052351330915,
+          "diff": 0.0023465628303972327,
+          "ci95": [
+            -0.011288813556384975,
+            0.01639112869721839
+          ],
+          "p_value": 0.7306,
+          "n_break": 403,
+          "n_hold": 860,
+          "months": 132,
+          "bh_significant_5pct": false
+        },
+        "divergence|spy_vol": {
+          "mean_break": 0.14960055806807274,
+          "mean_hold": 0.15690841974379066,
+          "diff": -0.007307861675717925,
+          "ci95": [
+            -0.027936881600658322,
+            0.010653131649567075
+          ],
+          "p_value": 0.4954,
+          "n_break": 403,
+          "n_hold": 860,
+          "months": 132,
+          "bh_significant_5pct": false
+        },
+        "correlation|spy_ret": {
+          "mean_break": 0.02313440540306455,
+          "mean_hold": 0.009657383337283634,
+          "diff": 0.013477022065780917,
+          "ci95": [
+            -0.006999671297779556,
+            0.041318142872848455
+          ],
+          "p_value": 0.2562,
+          "n_break": 27,
+          "n_hold": 1236,
+          "months": 132,
+          "bh_significant_5pct": false
+        },
+        "correlation|left_ret": {
+          "mean_break": 0.010294781095176618,
+          "mean_hold": 0.007147516060526911,
+          "diff": 0.0031472650346497065,
+          "ci95": [
+            -0.016765346775771347,
+            0.0224484568426222
+          ],
+          "p_value": 0.7538,
+          "n_break": 27,
+          "n_hold": 1236,
+          "months": 132,
+          "bh_significant_5pct": false
+        },
+        "correlation|spy_vol": {
+          "mean_break": 0.13967562655227198,
+          "mean_hold": 0.15490212294836728,
+          "diff": -0.015226496396095301,
+          "ci95": [
+            -0.04657941281721231,
+            0.025442565989123485
+          ],
+          "p_value": 0.3772,
+          "n_break": 27,
+          "n_hold": 1236,
+          "months": 132,
+          "bh_significant_5pct": false
+        },
+        "zscore|spy_ret": {
+          "mean_break": 0.0059755173758778545,
+          "mean_hold": 0.010521370780258256,
+          "diff": -0.004545853404380401,
+          "ci95": [
+            -0.02062137363092838,
+            0.010293104198973632
+          ],
+          "p_value": 0.5874,
+          "n_break": 160,
+          "n_hold": 1103,
+          "months": 132,
+          "bh_significant_5pct": false
+        },
+        "zscore|left_ret": {
+          "mean_break": -0.00014669906173332068,
+          "mean_hold": 0.008282648041938678,
+          "diff": -0.008429347103671998,
+          "ci95": [
+            -0.024106630229493796,
+            0.007667571511245393
+          ],
+          "p_value": 0.3188,
+          "n_break": 160,
+          "n_hold": 1103,
+          "months": 132,
+          "bh_significant_5pct": false
+        },
+        "zscore|spy_vol": {
+          "mean_break": 0.18623902581358714,
+          "mean_hold": 0.14998370059013538,
+          "diff": 0.03625532522345176,
+          "ci95": [
+            -0.008004128702227456,
+            0.0974817708915463
+          ],
+          "p_value": 0.1832,
+          "n_break": 160,
+          "n_hold": 1103,
+          "months": 132,
+          "bh_significant_5pct": false
+        },
+        "any_break|spy_ret": {
+          "mean_break": 0.011447485461997234,
+          "mean_hold": 0.008944821362080092,
+          "diff": 0.002502664099917142,
+          "ci95": [
+            -0.0056983328945443635,
+            0.011315236060988932
+          ],
+          "p_value": 0.577,
+          "n_break": 505,
+          "n_hold": 758,
+          "months": 132,
+          "bh_significant_5pct": false
+        },
+        "any_break|left_ret": {
+          "mean_break": 0.006698674702365247,
+          "mean_hold": 0.007558651999586518,
+          "diff": -0.0008599772972212715,
+          "ci95": [
+            -0.01286382408005964,
+            0.011554630130616743
+          ],
+          "p_value": 0.9022,
+          "n_break": 505,
+          "n_hold": 758,
+          "months": 132,
+          "bh_significant_5pct": false
+        },
+        "any_break|spy_vol": {
+          "mean_break": 0.16067837252458178,
+          "mean_hold": 0.15051146141976182,
+          "diff": 0.010166911104819959,
+          "ci95": [
+            -0.006394635159006099,
+            0.031141765706896186
+          ],
+          "p_value": 0.28,
+          "n_break": 505,
+          "n_hold": 758,
+          "months": 132,
+          "bh_significant_5pct": false
+        }
+      }
+    },
+    "validation": {
+      "observations": 417,
+      "tests": {
+        "divergence|spy_ret": {
+          "mean_break": 0.004259968362321501,
+          "mean_hold": 0.013136832489466614,
+          "diff": -0.008876864127145112,
+          "ci95": [
+            -0.03469040520121177,
+            0.015402034749919693
+          ],
+          "p_value": 0.4992,
+          "n_break": 157,
+          "n_hold": 260,
+          "months": 43,
+          "bh_significant_5pct": false
+        },
+        "divergence|left_ret": {
+          "mean_break": 0.0076687515642558995,
+          "mean_hold": 0.01876177341309529,
+          "diff": -0.01109302184883939,
+          "ci95": [
+            -0.04163819369191117,
+            0.01663300357544484
+          ],
+          "p_value": 0.4792,
+          "n_break": 157,
+          "n_hold": 260,
+          "months": 43,
+          "bh_significant_5pct": false
+        },
+        "divergence|spy_vol": {
+          "mean_break": 0.2155750539753071,
+          "mean_hold": 0.18297060504134285,
+          "diff": 0.03260444893396425,
+          "ci95": [
+            -0.0021788899792930787,
+            0.08792689738397075
+          ],
+          "p_value": 0.0766,
+          "n_break": 157,
+          "n_hold": 260,
+          "months": 43,
+          "bh_significant_5pct": false
+        },
+        "correlation|spy_ret": null,
+        "correlation|left_ret": null,
+        "correlation|spy_vol": null,
+        "zscore|spy_ret": {
+          "mean_break": 0.01481571531180022,
+          "mean_hold": 0.008901133942097123,
+          "diff": 0.005914581369703097,
+          "ci95": [
+            -0.02231026992792994,
+            0.030455430705740447
+          ],
+          "p_value": 0.553,
+          "n_break": 63,
+          "n_hold": 354,
+          "months": 43,
+          "bh_significant_5pct": false
+        },
+        "zscore|left_ret": {
+          "mean_break": 0.025107262355561665,
+          "mean_hold": 0.012712704956476183,
+          "diff": 0.012394557399085482,
+          "ci95": [
+            -0.02886521496045942,
+            0.053072971248731705
+          ],
+          "p_value": 0.5188,
+          "n_break": 63,
+          "n_hold": 354,
+          "months": 43,
+          "bh_significant_5pct": false
+        },
+        "zscore|spy_vol": {
+          "mean_break": 0.26177818652831625,
+          "mean_hold": 0.18340569218527805,
+          "diff": 0.0783724943430382,
+          "ci95": [
+            -0.005375491592101272,
+            0.16790910889488186
+          ],
+          "p_value": 0.1026,
+          "n_break": 63,
+          "n_hold": 354,
+          "months": 43,
+          "bh_significant_5pct": false
+        },
+        "any_break|spy_ret": {
+          "mean_break": 0.005735887081347483,
+          "mean_hold": 0.013359880627401068,
+          "diff": -0.007623993546053585,
+          "ci95": [
+            -0.03138001109884265,
+            0.014788458021139256
+          ],
+          "p_value": 0.5362,
+          "n_break": 195,
+          "n_hold": 222,
+          "months": 43,
+          "bh_significant_5pct": false
+        },
+        "any_break|left_ret": {
+          "mean_break": 0.014259619248119571,
+          "mean_hold": 0.014871303286529896,
+          "diff": -0.0006116840384103248,
+          "ci95": [
+            -0.023197915583325093,
+            0.02119395090223714
+          ],
+          "p_value": 0.973,
+          "n_break": 195,
+          "n_hold": 222,
+          "months": 43,
+          "bh_significant_5pct": false
+        },
+        "any_break|spy_vol": {
+          "mean_break": 0.2223720690465892,
+          "mean_hold": 0.1714193122557994,
+          "diff": 0.05095275679078981,
+          "ci95": [
+            -0.0009681106503074624,
+            0.13095296427045855
+          ],
+          "p_value": 0.0602,
+          "n_break": 195,
+          "n_hold": 222,
+          "months": 43,
+          "bh_significant_5pct": false
+        }
+      }
+    },
+    "test": {
+      "observations": 436,
+      "tests": {
+        "divergence|spy_ret": {
+          "mean_break": 0.010243283189611844,
+          "mean_hold": 0.02091298338016507,
+          "diff": -0.010669700190553225,
+          "ci95": [
+            -0.020188365787036505,
+            -0.0015399379164266244
+          ],
+          "p_value": 0.0238,
+          "n_break": 150,
+          "n_hold": 286,
+          "months": 42,
+          "bh_significant_5pct": false
+        },
+        "divergence|left_ret": {
+          "mean_break": 0.013749163024922843,
+          "mean_hold": 0.0161193316151548,
+          "diff": -0.002370168590231956,
+          "ci95": [
+            -0.017394063644792634,
+            0.010526705080414927
+          ],
+          "p_value": 0.7798,
+          "n_break": 143,
+          "n_hold": 274,
+          "months": 42,
+          "bh_significant_5pct": false
+        },
+        "divergence|spy_vol": {
+          "mean_break": 0.14118895665178394,
+          "mean_hold": 0.13033226176185406,
+          "diff": 0.01085669488992988,
+          "ci95": [
+            -0.0035865676642289203,
+            0.033463601680888994
+          ],
+          "p_value": 0.1932,
+          "n_break": 150,
+          "n_hold": 286,
+          "months": 42,
+          "bh_significant_5pct": false
+        },
+        "correlation|spy_ret": {
+          "mean_break": 0.022454214365392654,
+          "mean_hold": 0.01705651427479358,
+          "diff": 0.005397700090599075,
+          "ci95": [
+            -0.017199741496742454,
+            0.0223681241877398
+          ],
+          "p_value": 0.5794579457945794,
+          "n_break": 15,
+          "n_hold": 421,
+          "months": 42,
+          "bh_significant_5pct": false
+        },
+        "correlation|left_ret": {
+          "mean_break": 0.019724003462933955,
+          "mean_hold": 0.015141709261622819,
+          "diff": 0.004582294201311137,
+          "ci95": [
+            -0.05034390930728399,
+            0.07479073709000635
+          ],
+          "p_value": 0.9162916291629163,
+          "n_break": 15,
+          "n_hold": 402,
+          "months": 42,
+          "bh_significant_5pct": false
+        },
+        "correlation|spy_vol": {
+          "mean_break": 0.1278694800387765,
+          "mean_hold": 0.13428819040635678,
+          "diff": -0.006418710367580294,
+          "ci95": [
+            -0.02729399105217152,
+            0.01380479343375923
+          ],
+          "p_value": 0.5402540254025403,
+          "n_break": 15,
+          "n_hold": 421,
+          "months": 42,
+          "bh_significant_5pct": false
+        },
+        "zscore|spy_ret": {
+          "mean_break": 0.016336030069386973,
+          "mean_hold": 0.017375758003377147,
+          "diff": -0.001039727933990174,
+          "ci95": [
+            -0.016782704478605075,
+            0.011566677196899267
+          ],
+          "p_value": 0.8528,
+          "n_break": 56,
+          "n_hold": 380,
+          "months": 42,
+          "bh_significant_5pct": false
+        },
+        "zscore|left_ret": {
+          "mean_break": 0.008150865980779225,
+          "mean_hold": 0.016416561440977133,
+          "diff": -0.008265695460197908,
+          "ci95": [
+            -0.03321137974443935,
+            0.015584863164308151
+          ],
+          "p_value": 0.5618,
+          "n_break": 56,
+          "n_hold": 361,
+          "months": 42,
+          "bh_significant_5pct": false
+        },
+        "zscore|spy_vol": {
+          "mean_break": 0.13012607526300074,
+          "mean_hold": 0.13464818459718372,
+          "diff": -0.004522109334182983,
+          "ci95": [
+            -0.01952649195032145,
+            0.011179349992131507
+          ],
+          "p_value": 0.6788,
+          "n_break": 56,
+          "n_hold": 380,
+          "months": 42,
+          "bh_significant_5pct": false
+        },
+        "any_break|spy_ret": {
+          "mean_break": 0.012481894142578874,
+          "mean_hold": 0.021023045908029895,
+          "diff": -0.00854115176545102,
+          "ci95": [
+            -0.016221103021093437,
+            -0.0004314759784277853
+          ],
+          "p_value": 0.043,
+          "n_break": 193,
+          "n_hold": 243,
+          "months": 42,
+          "bh_significant_5pct": false
+        },
+        "any_break|left_ret": {
+          "mean_break": 0.010061801278599219,
+          "mean_hold": 0.01952957635193475,
+          "diff": -0.00946777507333553,
+          "ci95": [
+            -0.022453323525248037,
+            0.004291148808861019
+          ],
+          "p_value": 0.1746,
+          "n_break": 186,
+          "n_hold": 231,
+          "months": 42,
+          "bh_significant_5pct": false
+        },
+        "any_break|spy_vol": {
+          "mean_break": 0.1374668003321943,
+          "mean_hold": 0.13136739875532658,
+          "diff": 0.0060994015768677246,
+          "ci95": [
+            -0.0033083314852409658,
+            0.02022989594377887
+          ],
+          "p_value": 0.2484,
+          "n_break": 193,
+          "n_hold": 243,
+          "months": 42,
+          "bh_significant_5pct": false
+        }
+      }
+    }
+  },
+  "headline_segment": "test"
+}

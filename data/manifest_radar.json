@@ -1,0 +1,125 @@
+{
+  "start": "2006-01-01",
+  "end_exclusive": "2026-10-01",
+  "series": [
+    {
+      "symbol": "SPY",
+      "source": "yfinance",
+      "downloaded_utc": "2026-10-20T17:59:48+00:00",
+      "rows": 5218,
+      "first": "2006-01-03",
+      "last": "2026-09-30",
+      "sha256": "c3a32b6a6b6a349fee10687025ab9621424ff5d65a13c87f3b04715605114044"
+    },
+    {
+      "symbol": "TLT",
+      "source": "yfinance",
+      "downloaded_utc": "2026-10-20T17:59:48+00:00",
+      "rows": 5218,
+      "first": "2006-01-03",
+      "last": "2026-09-30",
+      "sha256": "e2645680c15b92e5e2137e4dd75f83594221c458516428e3248d173ee25e7116"
+    },
+    {
+      "symbol": "RSP",
+      "source": "yfinance",
+      "downloaded_utc": "2026-10-20T17:59:49+00:00",
+      "rows": 5218,
+      "first": "2006-01-03",
+      "last": "2026-09-30",
+      "sha256": "679a90a9d201fc9b06860b0206d17965ca8c4a6fb03e534ef55f858c26f99192"
+    },
+    {
+      "symbol": "QQQ",
+      "source": "yfinance",
+      "downloaded_utc": "2026-10-20T17:59:49+00:00",
+      "rows": 5218,
+      "first": "2006-01-03",
+      "last": "2026-09-30",
+      "sha256": "0aed306bfdbc244b4032d33f996d183fdaed92ea49f59827d42a67c972addfd1"
+    },
+    {
+      "symbol": "SOXX",
+      "source": "yfinance",
+      "downloaded_utc": "2026-10-20T17:59:49+00:00",
+      "rows": 5218,
+      "first": "2006-01-03",
+      "last": "2026-09-30",
+      "sha256": "ba3c191d10034d6350a491b7724fcd3653d542c92ad11b5049fa11716e3bf744"
+    },
+    {
+      "symbol": "^VIX",
+      "source": "yfinance",
+      "downloaded_utc": "2026-10-20T17:59:50+00:00",
+      "rows": 5220,
+      "first": "2006-01-03",
+      "last": "2026-09-30",
+      "sha256": "29ccd4b4bc265b947a40a447364a20800b36eedea271243ebaaa8260a8d4d627"
+    },
+    {
+      "symbol": "BZ=F",
+      "source": "yfinance",
+      "downloaded_utc": "2026-10-20T17:59:50+00:00",
+      "rows": 4772,
+      "first": "2007-07-30",
+      "last": "2026-09-30",
+      "sha256": "34cab49e56cccb0445a826326764c0a77686bd4d9aa3173a59a74d982d15cecb"
+    },
+    {
+      "symbol": "XLE",
+      "source": "yfinance",
+      "downloaded_utc": "2026-10-20T17:59:51+00:00",
+      "rows": 5218,
+      "first": "2006-01-03",
+      "last": "2026-09-30",
+      "sha256": "790578f2c66d4bda3a33f3c481f49efe3ca07dc26c8b6001a0b0ba5f8efd7af2"
+    },
+    {
+      "symbol": "ZW=F",
+      "source": "yfinance",
+      "downloaded_utc": "2026-10-20T17:59:51+00:00",
+      "rows": 5218,
+      "first": "2006-01-03",
+      "last": "2026-09-30",
+      "sha256": "8b8ad9b567556a52b5eb66c2999accb2a102025b7a9520df48639ba390d9bde2"
+    },
+    {
+      "symbol": "DX-Y.NYB",
+      "source": "yfinance",
+      "downloaded_utc": "2026-10-20T17:59:51+00:00",
+      "rows": 5221,
+      "first": "2006-01-03",
+      "last": "2026-09-30",
+      "sha256": "34f08185d30e01dd9bb400af0f002a54cd91b5697f071c740a67ca676736a68c"
+    },
+    {
+      "symbol": "GC=F",
+      "source": "yfinance",
+      "downloaded_utc": "2026-10-20T17:59:51+00:00",
+      "rows": 5218,
+      "first": "2006-01-03",
+      "last": "2026-09-30",
+      "sha256": "398ab70d914fdbc133982cb8f314a68474ac9b2561ef04d49d4d81abf03b806f"
+    },
+    {
+      "symbol": "DFII10",
+      "source": "FRED",
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DFII10&cosd=2006-01-01",
+      "downloaded_utc": "2026-10-20T17:59:52+00:00",
+      "rows": 5191,
+      "first": "2006-01-03",
+      "last": "2026-09-30",
+      "sha256": "bae44b691a610bb107c8356f70af4facc8bcf79c8660c6dccf0ff0e618209d99"
+    },
+    {
+      "symbol": "BAMLH0A0HYM2",
+      "source": "FRED",
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=BAMLH0A0HYM2&cosd=2006-01-01",
+      "downloaded_utc": "2026-10-20T17:59:52+00:00",
+      "rows": 771,
+      "first": "2023-10-23",
+      "last": "2026-09-30",
+      "sha256": "8fa22dbeda7a9c58189cf50b299b8fd91283858986068fb6e51d893f014dcdd9"
+    }
+  ]
+}
