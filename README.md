@@ -4,7 +4,19 @@ Cross-asset time-series momentum with volatility targeting on 16 liquid ETFs, va
 (60/20/20 chronological split, 100+ out-of-sample round trips, Deflated Sharpe, cost stress). Rules were written in
 `PREREGISTRATION.md` and committed before any data was downloaded. The sealed test was opened once.
 
-## Result (sealed out-of-sample, 2023-02-01 to 2026-09-30, 10 bps costs)
+<!-- summary:start -->
+## Summary across versions (all net of costs, each test opened once)
+| Version | Test window | Years | Sharpe | 95% CI | Deflated Sharpe | Round trips | Verdict |
+|---|---|---|---|---|---|---|---|
+| v1 | 2023-02-01 to 2026-09-30 (final 20%) | 3.6 | 0.25 | -0.52 to 1.09 | 0.60 | 78 | WATCH |
+| v2 | 2002-09-01 to 2008-06-30 (pre-sample) | 5.8 | 0.65 | -0.13 to 1.46 | 0.84 | 53 | WATCH |
+| v3 | 1988-01-04 to 2002-08-30 (pre-sample) | 14.7 | 0.59 | 0.05 to 1.15 | 0.91 | 208 | WATCH |
+
+The strongest evidence is v3: the rule frozen in v2, unchanged, on 14.7 never-seen years. Its Sharpe CI excludes zero, but it is still WATCH:
+every joint regime cell has enough trades, and the Deflated Sharpe (0.91) is below 0.95. Nothing was tuned on any test set.
+<!-- summary:end -->
+
+## v1 result (sealed out-of-sample, 2023-02-01 to 2026-09-30, 10 bps costs)
 **Verdict: WATCH.** The strategy did not earn a statistically distinguishable edge, and it lagged both benchmarks.
 
 | | Strategy | SPY | 60/40 |
@@ -79,3 +91,30 @@ designs (signal x universe x vol window), the best on validation chosen by a fix
 - Caveats: the holdout is *earlier* than the development data (contract line 60 wants the final 20%), 2002-2008 was a favourable era for trend following, and the selection rule picked a design whose train Sharpe was low. A contract-compliant check is prospective: `scripts/07_forward_check.py` logs the frozen rule from the freeze date; no forward numbers exist yet.
 
 Tearsheet: `results/tearsheet_v2.html`. Machine-readable: `results/v2_results.json`. v2 data: yfinance and FRED, downloaded 2026-10-20 UTC (`data/manifest_v2.json`).
+
+## v3: frozen rule on a long-history proxy universe, 1988-2002 holdout
+Registered in `PREREGISTRATION-v3.md` before any v3 data was downloaded. The v2 rule (12-1 sign, 126-session vol window, 10% target, gross cap 2x)
+was applied **unchanged**: nothing was selected. Universe: 18 long-history proxies (Vanguard equity, bond and REIT funds; FRED spot FX as excess-return proxies).
+Excluded by the registered rules: XAUUSD: download failed: ValueError: stooq returned no usable rows f; DCOILWTICO: gap of 8 sessions in a row (limit 2). So v3 has **no commodities**.
+
+**Verdict: WATCH.**
+
+| Holdout 1988-01-04 to 2002-08-30, 10 bps | v3 strategy | S&P 500 fund (VFINX) | 60/40 VFINX/VBMFX |
+|---|---|---|---|
+| Annualised return | 8.8% | 11.9% | 10.6% |
+| Volatility | 6.2% | 16.1% | 10.0% |
+| Sharpe | 0.59 | 0.46 | 0.56 |
+| Max drawdown | -10.9% | -46.3% | -25.5% |
+| Calmar | 0.81 | 0.26 | 0.42 |
+
+- Sharpe 95% bootstrap CI: **0.05 to 1.15, above zero.** Deflated Sharpe probability 0.91 against 67 trials (needs 0.95, flagged).
+- 208 round trips (gate passed), hit rate 47.6%, profit factor 2.61, Sortino 0.84, turnover 4.56x a year.
+- Cost stress Sharpe 0.59 / 0.51 / 0.44 at 1x / 2x / 3x.
+- Dot-com bust (2000-03-24 to 2002-08-30): strategy 19.1%, VFINX -38.2%.
+- Realised vol 6.2% is under the 10% target because the 2x gross cap binds on low-vol bonds and FX. Cash earned 5.2% a year.
+- Flags: Deflated Sharpe probability 0.91 < 0.95; only 50% of grid cells have positive validation Sharpe; result hinges on one setting (validation: primary beats neighbour median by 0.31). The selection flags are inherited from v2, where the rule was chosen.
+- Failed gate: every joint regime cell has enough trades (trend-regime cells: trend/high 5, trend/low 15, range/high 92, range/low 96).
+- Caveats: the holdout is pre-sample, not the contract's final 20%. Mutual funds can't really be shorted. FX proxies omit carry. 1990s trend-following results are public, so this is an independent-data check, not proof.
+
+Tearsheet: `results/tearsheet_v3.html`. Machine-readable: `results/v3_results.json`. Data: yfinance and FRED, downloaded 2026-10-20 UTC (`data/manifest_v3.json`).
+Reproduce v2/v3: `scripts/08`-`12` (v2), `scripts/13`-`17` (v3); the holdout scripts refuse to run without a matching freeze, and a rerun must reproduce identical numbers.
