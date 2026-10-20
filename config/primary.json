@@ -1,0 +1,18 @@
+{
+  "version": "1.0",
+  "registered": "2026-10-20",
+  "universe": ["SPY", "EFA", "EEM", "IWM", "QQQ", "EWJ", "TLT", "IEF", "LQD", "TIP", "GLD", "SLV", "DBC", "VNQ", "UUP", "FXE"],
+  "cash": "BIL",
+  "benchmarks": {"spy": {"SPY": 1.0}, "sixty_forty": {"SPY": 0.6, "IEF": 0.4}},
+  "data": {"source": "yfinance", "fallback": "stooq", "auto_adjust": true, "start": "2007-06-01", "eval_start": "2008-07-01"},
+  "split": {"train": 0.6, "validation": 0.2, "test": 0.2, "snap": "month_end"},
+  "signal": {"lookback_months": 12, "skip_sessions": 21, "sessions_per_month": 21, "rule": "sign(P[t-21]/P[t-21*L]-1)"},
+  "sizing": {"vol_window": 63, "annualisation": 252, "target_vol": 0.10, "gross_cap": 2.0, "long_short": true},
+  "execution": {"signal_at": "close_t", "fill_at": "close_t+1", "rebalance": "monthly", "drift": true},
+  "costs": {"commission_bps": 5, "slippage_bps": 5, "stress_multipliers": [2, 3], "borrow_bps_per_year": 25},
+  "grid": {"lookback_months": [3, 6, 9, 12], "target_vol": [0.06, 0.08, 0.10, 0.12, 0.15]},
+  "bootstrap": {"method": "stationary", "mean_block": 21, "resamples": 10000, "seed": 20261020},
+  "flags": {"max_sharpe": 2.0, "min_dsr_prob": 0.95, "min_positive_grid_share": 0.6, "neighbour_median_gap": 0.3, "min_oos_trades": 100},
+  "regimes": {"er_window": 63, "er_threshold": 0.30, "vol_window": 20, "vol_median_lookback": 252, "min_trades_per_cell": 20},
+  "crises": {"2008": ["2008-07-01", "2009-03-31"], "2020": ["2020-02-01", "2020-04-30"], "2022": ["2022-01-01", "2022-12-31"]}
+}
